@@ -1,4 +1,4 @@
-import { CompletedTask } from "entities/CompletedTask"; 
+import { CompletedTask } from "entities/CompletedTask";
 import clsx from "clsx";
 import { CompletedTaskInfo } from "features/ComTaskInfo";
 
