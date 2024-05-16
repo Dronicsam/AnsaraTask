@@ -1,13 +1,9 @@
 import { Task } from "entities/Task";
-import { InputTask } from "features/InputTask";
 import clsx from "clsx";
 
 export const AddTask = () => {
   return (
     <div className="mb-5">
-      <div className="mb-5">
-        <InputTask />
-      </div>
       <div
         className={clsx(
           "divide-y",

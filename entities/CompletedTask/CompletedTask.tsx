@@ -5,7 +5,7 @@ interface TaskProps {
 }
 
 export const CompletedTask = (props: TaskProps) => (
-  <div className="flex pb-5 pt-5 justify-between items-center">
+  <div className="flex pb-5 pt-5 justify-between items-center hover:bg-white/[.08]">
     <p className="text-[16px] line-through text-[#7A7A7A] w-72">
       {props.taskName}
     </p>

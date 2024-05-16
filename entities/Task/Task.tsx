@@ -5,7 +5,7 @@ interface TaskProps {
 }
 
 export const Task = (props: TaskProps) => (
-  <div className="flex pb-5 pt-5 justify-between items-center">
+  <div className="flex pb-5 pt-5 justify-between items-center hover:bg-white/[.08]">
     <p className="text-[16px] w-72">{props.taskName}</p>
     <div className="flex gap-5">
       <p className="text-[16px] text-center">{props.betweenTime}</p>

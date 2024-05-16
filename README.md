@@ -1,3 +1,5 @@
+Важно! Просмотр модальных окон и pop-up окон доступно на странице /modals. Логика открытия модальных окон не реализована.
+
 ## Getting Started
 
 First, run the development server:
