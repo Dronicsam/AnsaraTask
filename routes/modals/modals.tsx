@@ -127,7 +127,9 @@ export const Modals = () => {
         </div>
       </div>
       <div className="flex justify-center bg-[#D9D9D9]/[.10] w-fit h-fit p-8 rounded-lg">
-        <p className="w-72">Задачи длительностью менее 10 секунд не сохраняюся</p>
+        <p className="w-72">
+          Задачи длительностью менее 10 секунд не сохраняюся
+        </p>
         <Cross />
       </div>
       <div className="flex justify-center bg-[#D9D9D9]/[.10] w-fit h-fit p-8 rounded-lg">

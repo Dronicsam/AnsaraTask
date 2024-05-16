@@ -7,3 +7,4 @@ export { SaveIcon } from "./save";
 export { Cross } from "./Cross";
 export { Eye } from "./eye";
 export { EyeOff } from "./eyeoff";
+export { Dots } from "./Dots"
