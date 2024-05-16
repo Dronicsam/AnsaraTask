@@ -1,1 +1,1 @@
-export { CompletedTask } from "./CompletedTask"
+export { CompletedTask } from "./CompletedTask";

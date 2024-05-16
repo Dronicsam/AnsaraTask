@@ -1,13 +1,16 @@
-import { Task } from "entities/Task";
-import { InputTask } from "features/InputTask";
+import { CompletedTask } from "entities/CompletedTask"; 
 import clsx from "clsx";
+import { CompletedTaskInfo } from "features/ComTaskInfo";
 
-export const AddTask = () => {
+interface AddCompletedTaskType {
+  date: string;
+  time: string;
+}
+
+export const AddCompletedTask = (props: AddCompletedTaskType) => {
   return (
     <div className="mb-5">
-      <div className="mb-5">
-        <InputTask />
-      </div>
+      <CompletedTaskInfo date={props.date} time={props.time} />
       <div
         className={clsx(
           "divide-y",
@@ -19,13 +22,13 @@ export const AddTask = () => {
           "flex-col",
         )}
       >
-        <Task taskName="Текст для выполненной задачи" />
-        <Task
+        <CompletedTask taskName="Текст для выполненной задачи" />
+        <CompletedTask
           taskName="Текст для ещё одной задачи"
           elapsedTime="15:47"
           betweenTime="6:50-7:05"
         />
-        <Task
+        <CompletedTask
           taskName="Длинный текст для второй задачи, написанный в две строчки"
           elapsedTime="15:47"
           betweenTime="6:50-7:05"
