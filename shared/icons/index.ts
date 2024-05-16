@@ -3,3 +3,5 @@ export { PlusIcon } from "./plus";
 export { Logout } from "./logout";
 export { Trash } from "./trash";
 export { Stop } from "./stop";
+export { SaveIcon } from "./save";
+export { Cross } from "./Cross";

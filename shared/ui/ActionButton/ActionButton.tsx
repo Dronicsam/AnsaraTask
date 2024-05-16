@@ -1,10 +1,10 @@
 "use client";
 
-import { SVGProps, useState } from "react";
+import { SVGProps, useState, FunctionComponent } from "react";
 
 interface ActionButtonProps {
   buttonText: string;
-  icon: React.FunctionComponent<SVGProps<SVGSVGElement>>;
+  icon: FunctionComponent<SVGProps<SVGSVGElement>>;
 }
 
 export const ActionButton = (props: ActionButtonProps) => {

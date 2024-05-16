@@ -1,3 +1,3 @@
 import { Modals } from "routes/modals";
 
-export default Modals
+export default Modals;
