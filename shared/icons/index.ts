@@ -5,3 +5,5 @@ export { Trash } from "./trash";
 export { Stop } from "./stop";
 export { SaveIcon } from "./save";
 export { Cross } from "./Cross";
+export { Eye } from "./eye";
+export { EyeOff } from "./eyeoff";
