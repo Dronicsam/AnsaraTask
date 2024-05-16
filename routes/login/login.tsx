@@ -1,4 +1,5 @@
 "use client";
+import { Input } from "shared/ui";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -9,23 +10,30 @@ export const Login = () => {
   const [login, setLogin] = useState("");
   const [psw, setPass] = useState("");
 
+  function SimulateLogin(loginProp: string) {
+    localStorage.setItem("Login", loginProp);
+    router.push("/");
+  }
+
   return (
-    <div className="flex h-screen">
-      <div className="flex flex-col m-auto gap-y-5">
-        <input
+    <div className="m-auto">
+      <div className="flex m-auto flex-col w-fit gap-y-5">
+        <Input
+          widthProp={80}
           className="rounded-lg h-11 w-80 bg-white/10 placeholder-white px-3"
           placeholder="Login"
           value={login}
-          onChange={() => setLogin(login)}
+          onChange={(e) => setLogin(e.target.value)}
         />
-        <input
+        <Input
+          widthProp={80}
           className="rounded-lg h-11 w-80 bg-white/10 placeholder-white px-3"
           placeholder="Password"
           value={psw}
-          onChange={() => setPass(psw)}
+          onChange={(e) => setPass(e.target.value)}
         />
         <button
-          onClick={() => router.push("/")}
+          onClick={() => SimulateLogin(login)}
           className="rounded-lg h-10 w-80 bg-white text-black"
         >
           Войти

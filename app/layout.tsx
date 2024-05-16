@@ -21,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}`}>
-        <div className="py-28 px-16">{children}</div>
+      <body className={`${roboto.className} py-28 px-16 flex flex-col`}>
+        {children}
       </body>
     </html>
   );
