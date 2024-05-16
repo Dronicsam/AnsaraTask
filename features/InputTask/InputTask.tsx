@@ -1,7 +1,7 @@
 import { Input } from "shared/ui";
 import { PlayIcon, PlusIcon } from "shared/icons";
 
-export const AddTask = () => (
+export const InputTask = () => (
   <div className="flex items-center">
     <div className="relative w-full">
       <Input />
