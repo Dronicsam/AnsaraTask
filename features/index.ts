@@ -1,1 +1,1 @@
-export { InputTask } from "./InputTask"
+export { InputTask } from "./InputTask";

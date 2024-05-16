@@ -32,3 +32,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.divider {
+  background-color: aqua;
+  width: 100px;
+}
